@@ -15,8 +15,6 @@ static const float fFPS = static_cast<float>(FPS);
 
 // @brief アセットファイルパス
 #define ASSET_PATH(path) ("Assets/" path)
-// @brief モデルファイルパス
-#define MODEL_PATH(path) (ASSET_PATH("Model/" path))
 // @brief テクスチャファイルパス
 #define TEXTURE_PATH(path) (ASSET_PATH("Texture/" path))
 // @brief シェーダーファイルパス
@@ -39,7 +37,7 @@ static const float fFPS = static_cast<float>(FPS);
 static const float GRAVITY = 0.28f;
 
 // @brief アプリケーションのタイトル
-static const char* APP_TITLE = "3DGame";
+static const char* APP_TITLE = "SkillCreateActionGame";
 
 // 画面サイズ
 static const int SCREEN_WIDTH	= 1280;
