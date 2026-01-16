@@ -23,8 +23,15 @@ public:
 	// @brief XVˆ—
 	virtual void Update() override;
 
+	// @brief •`‰æˆ—
+	virtual void Draw() override;
+
 private:
 	// @brief ˆÚ“®ˆ—
 	void Move();
+
+private:
+	DirectX::XMFLOAT3 m_f3TargetPos;
+	bool m_bIsMove;
 };
 
