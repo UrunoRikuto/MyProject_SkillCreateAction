@@ -5,6 +5,7 @@
 *//**************************************************/
 #include "Player.h"
 #include "BillboardRenderer.h"
+#include "CollisionObb.h"
 #include "Input.h"
 #include "Oparation.h"
 #include "StructMath.h"
@@ -25,6 +26,9 @@ CPlayer::CPlayer()
 {
 	// ビルボードレンダラーの追加
 	AddComponent<CBillboardRenderer>();
+	// 当たり判定の追加
+	AddComponent<CCollisionObb>();
+
 }
 
 /*****************************************//*
@@ -46,7 +50,14 @@ void CPlayer::Init()
 	CBillboardRenderer* pRenderer = GetComponent<CBillboardRenderer>();
 	pRenderer->SetKey("Player");
 
+	// サイズの設定
 	m_tParam.m_f3Size = DirectX::XMFLOAT3{ 2.0f, 2.0f, 2.0f };
+
+	// 当たり判定の設定
+	CCollisionObb* pCollision = GetComponent<CCollisionObb>();
+	pCollision->SetTag("Player");
+	pCollision->SetCenter(m_tParam.m_f3Pos);
+	pCollision->SetSize(m_tParam.m_f3Size);
 }
 
 /*****************************************//*
@@ -59,6 +70,9 @@ void CPlayer::Update()
 
 	// 基底クラスの更新処理
 	CEntity::Update();
+
+	// 当たり判定の位置更新
+	GetComponent<CCollisionObb>()->SetCenter(m_tParam.m_f3Pos);
 }
 
 /*****************************************//*
