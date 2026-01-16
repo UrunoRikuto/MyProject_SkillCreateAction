@@ -14,6 +14,10 @@ void CObjectLoad::LoadAll()
 {
 	// フェード用テクスチャのロード
     CRendererComponent::Load(RendererKind::Texture, TEXTURE_PATH("Fade.png"), "Fade");
+	// 地面用テクスチャのロード
+	CRendererComponent::Load(RendererKind::Texture, TEXTURE_PATH("Field.png"), "Field");
+	// プレイヤー用テクスチャのロード
+	CRendererComponent::Load(RendererKind::Texture, TEXTURE_PATH("Player.png"), "Player");
 }
 
 

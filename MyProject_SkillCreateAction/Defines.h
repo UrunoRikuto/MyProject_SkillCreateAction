@@ -12,13 +12,12 @@
 // @brief フレームレート
 static const int FPS = 60;
 static const float fFPS = static_cast<float>(FPS);
+static const float fDeltaTime = 1.0f / fFPS;
 
-// @brief アセットファイルパス
-#define ASSET_PATH(path) ("Assets/" path)
 // @brief テクスチャファイルパス
-#define TEXTURE_PATH(path) (ASSET_PATH("Texture/" path))
+#define TEXTURE_PATH(path) ("Assets/Texture/" path)
 // @brief シェーダーファイルパス
-#define SHADER_PATH(path) (ASSET_PATH("Shader/" path))
+#define SHADER_PATH(path) ("Assets/Shader/" path)
 
 // 3D空間定義
 #define CMETER(value) (value * 0.01f)

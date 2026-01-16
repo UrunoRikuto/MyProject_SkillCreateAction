@@ -6,6 +6,8 @@
 *//**************************************************/
 #include "SceneGame.h"
 #include "Camera.h"
+#include "Field.h"
+#include "Player.h"
 
 /****************************************//*
 	@brief　	| コンストラクタ
@@ -33,6 +35,12 @@ void CSceneGame::Init()
 
 	// カメラの種類をゲーム用カメラに設定
 	CCamera::GetInstance()->SetCameraKind(CameraKind::CAM_GAME);
+
+	// フィールドの追加
+	AddGameObject<CField>(Tag::GameObject, "Field");
+
+	// プレイヤーの追加
+	AddGameObject<CPlayer>(Tag::GameObject, "Player");
 }
 
 /****************************************//*

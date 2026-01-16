@@ -7,5 +7,6 @@ public:
 	CCameraGame();
 	virtual ~CCameraGame();
 	virtual void Update() final;
+	DirectX::XMFLOAT3 GetClickTarget();
 private:
 };

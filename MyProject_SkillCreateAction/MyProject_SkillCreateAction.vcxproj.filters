@@ -40,6 +40,9 @@
     <Filter Include="コードファイル\Imgui">
       <UniqueIdentifier>{4ede4711-8a93-4436-9b54-fdbd103807f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="コードファイル\Imgui\System">
+      <UniqueIdentifier>{aa9d48a8-4962-427d-bf28-199f842fa78b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="コードファイル\Sprite">
       <UniqueIdentifier>{1904ad49-4e82-4d46-a638-016e94f21dee}</UniqueIdentifier>
     </Filter>
@@ -61,14 +64,20 @@
     <Filter Include="コードファイル\GameObject">
       <UniqueIdentifier>{fa752cc7-e8ff-45d0-8ea8-933f6e8006ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="コードファイル\GameObject\Entity">
+      <UniqueIdentifier>{cfeff9a7-8b31-406b-953c-2ea6aed6f98b}</UniqueIdentifier>
+    </Filter>
     <Filter Include="コードファイル\Scene">
       <UniqueIdentifier>{e1202c01-80bb-40f7-9cd1-83000149f264}</UniqueIdentifier>
     </Filter>
-    <Filter Include="コードファイル\Imgui\System">
-      <UniqueIdentifier>{aa9d48a8-4962-427d-bf28-199f842fa78b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="コードファイル\DesignPatternBase">
       <UniqueIdentifier>{9cee6c2d-77a2-4cf9-8819-fd195fdf1435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="コードファイル\GameObject\Field">
+      <UniqueIdentifier>{0cab9ddb-d8e4-4fba-bd0f-b45d54f39bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="コードファイル\GameObject\Entity\Player">
+      <UniqueIdentifier>{7ce3b6f1-525b-489e-a82f-4054c579cf3d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +204,15 @@
     <ClInclude Include="Singleton.h">
       <Filter>コードファイル\DesignPatternBase</Filter>
     </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>コードファイル\GameObject\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>コードファイル\GameObject\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>コードファイル\GameObject\Entity\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -313,6 +331,15 @@
     </ClCompile>
     <ClCompile Include="ShaderManager.cpp">
       <Filter>コードファイル\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>コードファイル\GameObject\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>コードファイル\GameObject\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>コードファイル\GameObject\Entity\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
